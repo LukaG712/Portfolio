@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio – Webtechnologie</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous" defer></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="Logo" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Navigatiemenu openen">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="portfolio.html">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="overmij.html">Over mij</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="pagina-intro">
+      <div class="container">
+        <a href="portfolio.html" class="btn btn-outline-secondary btn-sm mb-3">
+          <i class="bi bi-arrow-left me-1"></i> Terug naar portfolio
+        </a>
+        <h1>Webtechnologie</h1>
+        <p class="lead">Een responsieve portfolio-website gebouwd met HTML5, CSS3 en Bootstrap 5.</p>
+      </div>
+    </section>
+
+    <section class="project-detail">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-7">
+            <figure>
+              <img src="assets/images/sfeerbeeld1.jpg" alt="Screenshot van de portfolio-website gebouwd met Bootstrap 5" class="img-fluid w-100 rounded" />
+              <figcaption class="text-muted small mt-2">De afgewerkte portfolio-website, geoptimaliseerd voor desktop en mobiel. Eigen werk, academiejaar 2025&ndash;2026.</figcaption>
+            </figure>
+          </div>
+          <aside class="col-lg-5">
+            <h2>Over dit project</h2>
+            <p>Voor dit project ontwikkelde ik een volledige responsieve portfolio-website met <strong>Bootstrap 5</strong>. De nadruk lag op semantische HTML5-structuur, correct gebruik van layout-elementen zoals <code>header</code>, <code>main</code>, <code>footer</code>, <code>section</code> en <code>aside</code>, en een strak, minimalistisch ontwerp dat werkt op elk schermformaat.</p>
+            <p>De website werd gedeployd via <strong>Netlify</strong> en is gelinkt aan een GitHub-repository voor versiebeheer. Het contactformulier maakt gebruik van Netlify Forms voor inzendingen zonder server-side code.</p>
+            <h3>Periode</h3>
+            <p>Academiejaar 2025&ndash;2026</p>
+            <h3>Technologieen</h3>
+            <div class="mb-3">
+              <span class="badge me-1">HTML5</span>
+              <span class="badge me-1">CSS3</span>
+              <span class="badge me-1">Bootstrap 5</span>
+              <span class="badge me-1">JavaScript</span>
+              <span class="badge me-1">Leaflet.js</span>
+              <span class="badge">Netlify</span>
+            </div>
+            <a href="https://luka-gosseye.netlify.app/" target="_blank" class="btn btn-primary"><i class="bi bi-box-arrow-up-right me-2"></i>Bekijk live</a>
+          </aside>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-lg-8">
+            <h2>Wat heb ik geleerd?</h2>
+            <p>Dit project leerde me hoe ik een volledige website van nul opbouw met een professionele aanpak. Belangrijke inzichten waren het belang van semantische HTML voor toegankelijkheid en SEO, het denken in een responsief grid-systeem, en het gebruik van CSS-custom properties voor een consistent kleurenpalet door de hele website heen.</p>
+            <p>Ik leerde ook werken met <strong>Git en GitHub</strong> voor versiebeheer, en hoe je een statische site automatisch deployt via <strong>Netlify</strong> door simpelweg te pushen naar de main-branch. Het integreren van <strong>Leaflet.js</strong> op de contactpagina was een eerste kennismaking met een externe JavaScript-bibliotheek.</p>
+            <h2 class="mt-4">Uitdagingen</h2>
+            <p>De grootste uitdaging was het consistent houden van de stijl over meerdere pagina's heen zonder code te herhalen. Door gebruik te maken van een gedeeld CSS-bestand en Bootstrap-utility classes kon ik dit oplossen. Het correct instellen van de Netlify Forms integratie vroeg ook wat uitzoekwerk, maar werkt uiteindelijk naadloos.</p>
+          </div>
+        </div>
+
+        <div class="row mt-4">
+          <div class="col-12">
+            <a href="netwerken.html" class="btn btn-outline-secondary">Volgend project <i class="bi bi-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <p>&copy; 2026 Luka Gosseye. Alle rechten voorbehouden.</p>
+        </div>
+        <div class="col-md-6 text-md-end mt-2 mt-md-0">
+          <a href="https://www.linkedin.com/in/luka-gosseye-955b1233b/" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin fs-4 me-2"></i></a>
+          <a href="https://github.com/LukaG712" target="_blank" aria-label="GitHub"><i class="bi bi-github fs-4"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio – IoT Toepassing</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous" defer></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="Logo" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Navigatiemenu openen">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="portfolio.html">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="overmij.html">Over mij</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="pagina-intro">
+      <div class="container">
+        <a href="portfolio.html" class="btn btn-outline-secondary btn-sm mb-3">
+          <i class="bi bi-arrow-left me-1"></i> Terug naar portfolio
+        </a>
+        <h1>IoT Toepassing</h1>
+        <p class="lead">Sensoren koppelen aan een netwerk en sensordata real-time visualiseren op een dashboard.</p>
+      </div>
+    </section>
+
+    <section class="project-detail">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-7">
+            <figure>
+              <img src="assets/images/sfeerbeeld3.jpg" alt="IoT opstelling met sensoren en microcontroller op breadboard" class="img-fluid w-100 rounded" />
+              <figcaption class="text-muted small mt-2">Praktische IoT-opstelling tijdens het labo met sensoren aangesloten op een microcontroller. Academiejaar 2025&ndash;2026.</figcaption>
+            </figure>
+          </div>
+          <aside class="col-lg-5">
+            <h2>Over dit project</h2>
+            <p>In dit IoT-project bouwde ik een praktische opstelling waarbij fysieke sensoren data doorsturen naar een centraal dashboard. Ik verbond temperatuur- en vochtigheidsensoren met een microcontroller, die de meetwaarden via het netwerk doorstuurt naar een visualisatieplatform.</p>
+            <p>De nadruk lag op het begrijpen van de volledige datastroom: van fysiek signaal, over draadloze of bedrade verbinding, tot visuele weergave in real time.</p>
+            <h3>Periode</h3>
+            <p>Academiejaar 2025&ndash;2026</p>
+            <h3>Technologieen</h3>
+            <div>
+              <span class="badge me-1">IoT</span>
+              <span class="badge me-1">Sensoren</span>
+              <span class="badge me-1">MQTT</span>
+              <span class="badge me-1">Dashboard</span>
+              <span class="badge">Microcontroller</span>
+            </div>
+          </aside>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-lg-8">
+            <h2>Wat heb ik geleerd?</h2>
+            <p>Dit project leerde me hoe de fysieke en digitale wereld samenkomen in IoT-toepassingen. Ik begreep hoe sensoren analoge of digitale signalen produceren, hoe een microcontroller die verwerkt en doorstuurt, en hoe een lichtgewicht protocol zoals <strong>MQTT</strong> ideaal is voor low-bandwidth IoT-communicatie.</p>
+            <p>Het opzetten van een dashboard om sensordata te visualiseren gaf me ook inzicht in het belang van data-presentatie: ruwe getallen worden pas bruikbaar als ze in context worden getoond met grafieken en drempelwaarden.</p>
+            <h2 class="mt-4">Uitdagingen</h2>
+            <p>De grootste uitdaging was de betrouwbaarheid van de verbinding. Sensorwaarden vielen soms weg door netwerkonderbrekingen, wat me dwong na te denken over foutafhandeling en buffering. Ook het correct kalibreren van sensoren voor nauwkeurige metingen vergde geduld en testen.</p>
+          </div>
+        </div>
+
+        <div class="row mt-4">
+          <div class="col-12">
+            <a href="netwerken.html" class="btn btn-outline-secondary me-2"><i class="bi bi-arrow-left ms-1"></i> Vorig project</a>
+            <a href="database.html" class="btn btn-outline-secondary">Volgend project <i class="bi bi-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <p>&copy; 2026 Luka Gosseye. Alle rechten voorbehouden.</p>
+        </div>
+        <div class="col-md-6 text-md-end mt-2 mt-md-0">
+          <a href="https://www.linkedin.com/in/luka-gosseye-955b1233b/" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin fs-4 me-2"></i></a>
+          <a href="https://github.com/LukaG712" target="_blank" aria-label="GitHub"><i class="bi bi-github fs-4"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
