@@ -43,7 +43,7 @@ header .nav-link {
 
 header .nav-link:hover,
 header .nav-link.active {
-  color: var(--kleur-accent);
+  color: var(--kleur-primair);
 }
 
 header .navbar-toggler {
