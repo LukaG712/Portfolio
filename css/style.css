@@ -9,7 +9,7 @@
 :root {
   --kleur-primair:   #E4572E;
   --kleur-secundair: #29335C;
-  --kleur-accent:    #F3A712;
+  --kleur-accent:    #E4572E;
   --kleur-licht:     #F8F8F8;
 }
 
@@ -43,7 +43,9 @@ header .nav-link {
 
 header .nav-link:hover,
 header .nav-link.active {
-  color: var(--kleur-primair);
+  color: var(--kleur-primair) !important;
+
+
 }
 
 header .navbar-toggler {
