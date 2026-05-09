@@ -2,7 +2,7 @@
 
 Portfoliowebsite gemaakt voor het vak Webtechnologie aan AP Hogeschool Antwerpen (Graduaat SNB/IoT).
 
-Live: [gosseye-luka.netlify.app](https://gosseye-luka.netlify.app)
+Live: [luka-gosseye.netlify.app](https://luka-gosseye.netlify.app)
 
 ---
 
@@ -22,7 +22,7 @@ Live: [gosseye-luka.netlify.app](https://gosseye-luka.netlify.app)
 portfolio/
 ├── index.html
 ├── portfolio.html
-├── naam.html
+├── overmij.html
 ├── contact.html
 ├── webtechnologie.html
 ├── netwerken.html
@@ -52,10 +52,10 @@ portfolio/
 
 Drie secties:
 
-**Hero** (`<section class="hero">`)
+**Intro** (`<section class="intro-sectie">`)
 - Twee kolommen: links tekst (h1 + lead + twee knoppen), rechts profielfoto
-- `<h1>` met `<span>` voor de naam in oranje (gestyled via `.hero h1 span` in CSS)
-- Foto heeft class `profiel` → rond, oranje rand via CSS
+- `<h1>` met `<span>` voor het gedeelte in oranje (gestyled via `.intro-sectie h1 span` in CSS)
+- Foto gewrapped in `<figure>` + `<figcaption>`, class `profiel` → rond, oranje rand via CSS
 
 **Over mij** (`<section class="over-mij">`)
 - Links: twee alinea's tekst + knop "Meer over mij"
@@ -80,7 +80,7 @@ Drie secties:
 
 ---
 
-### naam.html — Over mij
+### overmij.html — Over mij
 
 **Pagina-intro** (`<section class="pagina-intro">`)
 - Twee kolommen: links profielfoto (`img.profiel`), rechts naam + lead + knop
@@ -97,11 +97,10 @@ Layout: `container > row` met twee kolommen.
 
 **Formulier** (`<section class="col-md-8">`)
 - Netlify Forms: `data-netlify="true"`, hidden `form-name` field, honeypot spam-bescherming
-- Drie `<fieldset class="row g-3 mb-3">` blokken:
+- Twee `<fieldset class="row g-3 mb-3">` blokken:
   1. Persoonlijke gegevens: voornaam, achternaam, e-mail, telefoon
   2. Bericht: onderwerp (select), berichtveld (textarea)
-  3. Akkoord-checkbox
-- Knop "Verstuur bericht" met `bi-send` icoon
+- Akkoord-checkbox + knop "Verstuur bericht" met `bi-send` icoon
 
 **Aside** (`<aside class="col-md-4">`)
 - Contactgegevens met inline iconen
@@ -109,8 +108,9 @@ Layout: `container > row` met twee kolommen.
 
 **Leaflet-kaart** (`<div id="kaart">`)
 - Interactieve kaart via `js/kaart.js`, gecentreerd op Lint, België
-- Marker met popup
+- Marker (`L.marker`) met popup "Lint, België"
 - Kaartdata: OpenStreetMap
+- Script geladen vóór `</body>` zodat de DOM klaar is
 
 ---
 
@@ -140,7 +140,7 @@ Alle zes hebben dezelfde structuur:
 ### js/kaart.js — Leaflet kaart
 
 Initialiseert een Leaflet-kaart in `<div id="kaart">` op `contact.html`.  
-Gecentreerd op Lint, België (51.0833, 4.5833) met een marker en popup.  
+Gecentreerd op Lint, België (51.12, 4.50) met een `L.marker` en popup.  
 Gebruikt OpenStreetMap als tile-provider.
 
 ---
@@ -153,7 +153,7 @@ Kleurenpalet via CSS-variabelen:
 :root {
   --kleur-primair:   #E4572E;  /* oranje-rood */
   --kleur-secundair: #29335C;  /* donkerblauw */
-  --kleur-accent:    #F3A712;  /* geel/goud   */
+  --kleur-accent:    #E4572E;  /* oranje-rood */
   --kleur-licht:     #F8F8F8;  /* lichtgrijs  */
 }
 ```
@@ -163,13 +163,12 @@ Kleurenpalet via CSS-variabelen:
 | `body` | `flex-direction: column; min-height: 100vh` zodat footer altijd onderaan staat |
 | `h1, h2, h3` | Donkerblauwe tekstkleur |
 | `header` | Donkerblauwe achtergrond |
-| `header .nav-link` | Witte tekst, geel bij hover/active |
+| `header .nav-link` | Witte tekst, oranje bij hover/active |
 | `header .navbar-toggler-icon` | `filter: invert(1)` → wit hamburgericoon |
 | `footer` | Donkerblauwe achtergrond, witte tekst en links |
 | `.btn-primary` | Oranje achtergrond (overschrijft Bootstrap) |
-| `.hero` | Lichtgrijze achtergrond, ruime padding |
-| `.hero h1 span` | Oranje tekst voor de naam |
-| `.hero img` | Ronde foto met oranje rand |
+| `.intro-sectie` | Lichtgrijze achtergrond, ruime padding |
+| `.intro-sectie h1 span` | Oranje tekst |
 | `.over-mij` | Witte achtergrond, padding |
 | `.cta` | Donkerblauwe achtergrond, witte tekst |
 | `.pagina-intro` | Lichtgrijze achtergrond met oranje border-bottom |
