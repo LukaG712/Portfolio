@@ -44,62 +44,57 @@
             Velden met een * zijn verplicht.</p>
           <hr>
 
-          <form name="contact" method="POST" action="/success" data-netlify="true" data-netlify-recaptcha="true" netlify-honeypot="bot-veld">
-            <input type="hidden" name="form-name" value="contact" />
-            <p class="d-none">
-              <label>Vul dit veld niet in: <input name="bot-veld" /></label>
-            </p>
+    <form name="contact" method="POST" action="/contact.html" data-netlify="true" novalidate>
+      <input type="hidden" name="form-name" value="contact" />
 
-            <fieldset class="row g-3 mb-3">
-              <legend>Persoonlijke gegevens</legend>
-              <div class="col-md-6">
-                <label for="voornaam" class="form-label">Voornaam *</label>
-                <input type="text" class="form-control" id="voornaam" name="voornaam" required autocomplete="given-name" />
-              </div>
-              <div class="col-md-6">
-                <label for="achternaam" class="form-label">Achternaam *</label>
-                <input type="text" class="form-control" id="achternaam" name="achternaam" required autocomplete="family-name" />
-              </div>
-              <div class="col-md-6">
-                <label for="email" class="form-label">E-mailadres *</label>
-                <input type="email" class="form-control" id="email" name="email" required autocomplete="email" />
-              </div>
-              <div class="col-md-6">
-                <label for="telefoon" class="form-label">Telefoonnummer</label>
-                <input type="tel" class="form-control" id="telefoon" name="telefoon" placeholder="1234 56 78 90" autocomplete="tel" />
-              </div>
-            </fieldset>
+      <fieldset class="row g-3 mb-3">
+        <legend>Persoonlijke gegevens</legend>
+        <div class="col-md-6">
+          <label for="voornaam" class="form-label">Voornaam *</label>
+          <p><input type="text" class="form-control" id="voornaam" name="voornaam" required autocomplete="given-name" /></p>
+        </div>
+        <div class="col-md-6">
+          <label for="achternaam" class="form-label">Achternaam *</label>
+          <p><input type="text" class="form-control" id="achternaam" name="achternaam" required autocomplete="family-name" /></p>
+        </div>
+        <div class="col-md-6">
+          <label for="email" class="form-label">E-mailadres *</label>
+          <p><input type="email" class="form-control" id="email" name="email" required autocomplete="email" /></p>
+        </div>
+        <div class="col-md-6">
+          <label for="telefoon" class="form-label">Telefoonnummer</label>
+          <p><input type="tel" class="form-control" id="telefoon" name="telefoon" placeholder="1234 56 78 90" autocomplete="tel" /></p>
+        </div>
+      </fieldset>
 
-            <fieldset class="row g-3 mb-3">
-              <legend>Bericht</legend>
-              <div class="col-12">
-                <label for="onderwerp" class="form-label">Onderwerp *</label>
-                <select class="form-select" id="onderwerp" name="onderwerp" required>
-                  <option value="" disabled selected>Kies een onderwerp…</option>
-                  <option value="samenwerking">Samenwerking</option>
-                  <option value="stage">Stageaanbod</option>
-                  <option value="vraag">Algemene vraag</option>
-                  <option value="anders">Anders</option>
-                </select>
-              </div>
-              <div class="col-12">
-                <label for="bericht" class="form-label">Bericht *</label>
-                <textarea class="form-control" id="bericht" name="bericht" rows="5" required></textarea>
-              </div>
-            </fieldset>
+      <fieldset class="row g-3 mb-3">
+        <legend>Bericht</legend>
+        <div class="col-12">
+          <label for="onderwerp" class="form-label">Onderwerp *</label>
+          <p>
+            <input type="text" class="form-control" id="onderwerp" name="onderwerp" placeholder="Bv. Samenwerking, Stage, Vraag…" required />
+          </p>
+        </div>
+        <div class="col-12">
+          <label for="bericht" class="form-label">Bericht *</label>
+          <p><textarea class="form-control" id="bericht" name="bericht" rows="5" required></textarea></p>
+        </div>
+      </fieldset>
 
-            <div class="form-check mb-3">
-              <input class="form-check-input" type="checkbox" id="akkoord" name="akkoord" required />
-              <label class="form-check-label" for="akkoord">Ik ga akkoord met de verwerking van mijn gegevens. *</label>
-            </div>
+      <div class="form-check mb-3">
+        <p>
+          <input class="form-check-input" type="checkbox" id="akkoord" name="akkoord" required />
+          <label class="form-check-label" for="akkoord">Ik ga akkoord met de verwerking van mijn gegevens. *</label>
+        </p>
+      </div>
 
-            <div class="mb-3" data-netlify-recaptcha="true"></div>
+      <p>
+        <button type="submit" class="btn btn-primary">
+          <i class="bi bi-send me-2"></i>Verstuur bericht
+        </button>
+      </p>
 
-            <button type="submit" class="btn btn-primary">
-              <i class="bi bi-send me-2"></i>Verstuur bericht
-            </button>
-
-          </form>
+    </form>
         </section>
 
         <aside class="col-md-4">
