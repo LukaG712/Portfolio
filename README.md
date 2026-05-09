@@ -2,7 +2,7 @@
 
 Portfoliowebsite gemaakt voor het vak Webtechnologie aan AP Hogeschool Antwerpen (Graduaat SNB/IoT).
 
-Live: [gosseye-luka.netlify.app](https://gosseye-luka.netlify.app)
+Live: [luka-gosseye.netlify.app](https://luka-gosseye.netlify.app)
 
 ---
 
