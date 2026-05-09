@@ -1,6 +1,6 @@
 # Portfolio – Luka Gosseye
 
-Portfoliowebsite gemaakt voor het vak Webtechnologie aan AP Hogeschool Antwerpen (Graduaat SNB/IoT).
+Portfoliowebsite gemaakt voor het vak Webtechnologie aan AP Hogeschool Antwerpen (Graduaat IoT).
 
 Live: [luka-gosseye.netlify.app](https://luka-gosseye.netlify.app)
 
