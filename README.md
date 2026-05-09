@@ -41,7 +41,11 @@ portfolio/
         ├── fotozelf.jpg
         ├── sfeerbeeld1.jpg
         ├── sfeerbeeld2.jpg
-        └── sfeerbeeld3.jpg
+        ├── sfeerbeeld3.jpg
+        ├── sfeerbeeld4.jpg
+        ├── sfeerbeeld5.jpg
+        └── sfeerbeeld6.jpg
+
 ```
 
 ---
@@ -128,11 +132,11 @@ Alle zes hebben dezelfde structuur:
 
 | Bestand | Topic | Afbeelding | Badges |
 |---|---|---|---|
-| webtechnologie.html | Webtechnologie | sfeerbeeld1.jpg | HTML5, CSS3, Bootstrap 5, JavaScript, Leaflet.js, Netlify |
+| webtechnologie.html | Webtechnologie | sfeerbeeld4.jpg | HTML5, CSS3, Bootstrap 5, JavaScript, Leaflet.js, Netlify |
 | netwerken.html | Netwerken | sfeerbeeld2.jpg | TCP/IP, OSI-model, Wireshark, IPv4/IPv6, Cisco Packet Tracer |
-| iot.html | IoT Toepassing | sfeerbeeld3.jpg | IoT, Sensoren, MQTT, Dashboard, Microcontroller |
-| database.html | Database | sfeerbeeld1.jpg | MySQL, SQL, PHP, ER-diagram |
-| linux.html | Linux & Scripting | sfeerbeeld2.jpg | Linux, Bash, Cron, SSH, Ubuntu Server |
+| iot.html | IoT Toepassing | sfeerbeeld6.jpg | IoT, Sensoren, MQTT, Dashboard, Microcontroller |
+| database.html | Database | sfeerbeeld5.jpg | MySQL, SQL, PHP, ER-diagram |
+| linux.html | Linux & Scripting | sfeerbeeld1.jpg | Linux, Bash, Cron, SSH, Ubuntu Server |
 | eindproject.html | Eindproject | sfeerbeeld3.jpg | HTML5, CSS3, Bootstrap, PHP, MySQL, Git, Linux |
 
 ---
